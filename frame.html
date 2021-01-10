@@ -16,9 +16,17 @@
             border-radius: 10px;
             position: relative;
             margin: 10px;
+            overflow: hidden;
         }
         .photo-frame .photo img{
             width: 100%;
+        }
+        .photo-frame:hover .photo img{
+            /*transittion kora hoise*/
+            /* transform: rotate(360deg); */
+            transform: scale(1.6);
+            /* transform: skew(30deg); */
+            transition: transform 3s;
         }
         .photo-detail{
             position: absolute;
@@ -29,9 +37,9 @@
         }
         .photo-frame:hover .photo-detail{
             display: block;
-            background-color: rgba(153, 124, 52, 0.896);
+            background-color: rgba(153, 124, 52, 0.256);
             color: blue;
-            background-color: green;
+            background-color: rgba(69, 153, 69, 0.438);
             text-align: center;
 
         }
@@ -44,7 +52,7 @@
     </style>
 </head>
 <body>
-    <h1>My Photo book</h1>
+        <h1>My Photo book</h1>
     <section class="photo-album">
         <div class="photo-frame">
             <div class="photo">
